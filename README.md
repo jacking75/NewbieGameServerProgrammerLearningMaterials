@@ -1,5 +1,12 @@
 # 뉴비 게임 서버 프로그래머를 위한 학습 자료
 
+- [A STUDY PATH FOR GAME PROGRAMMER](https://github.com/miloyip/game-programmer )
+    - 각 분야별로 책을 중심으로 공부 방향을 알려줌
+- [Awesome Roadmaps Overview](https://www.trackawesomelist.com/liuchong/awesome-roadmaps/readme/ )  
+  
+  
+
+
 ## 프로그래밍을 위한 AI 활용 
 - GitHub Copilot
     - [비주얼 스튜디오의 GitHub 코파일럿: 2023년 요약](https://docs.google.com/document/d/1KiqQhZe04TbevuRv9PxMSvs0YZLbGkiK47TtQqOkzoU/edit?usp=sharing )
@@ -37,6 +44,7 @@
 ### 네트워크 프로그래밍 
 - [YOUTUBE 뇌를 자극하는 TCP/IP 소켓 프로그래밍](https://www.youtube.com/playlist?list=PLVsNizTWUw7GZy4UA9pntGRC9IIXIYiHm )
 - [YOUTUBE C++ Korea 제6회 세미나 - 채팅 서버 개발로 알아보는 C++의 기능들](https://youtu.be/JxejgUKTViQ )
+- [BeeJ's Guide to Network Programming - 인터넷 소켓 활용](https://blogofscience.com/Socket_Programming-KLDP.html )
   
 
 ### 실습
@@ -92,8 +100,8 @@
 - [Windows에서 Docker 환경을 바꿨다 (Docker Desktop → Rancher Desktop)](https://docs.google.com/document/d/e/2PACX-1vSd9sgy5IWAk5J74YZ0ndqa7djhp3xh6IVSmu-gJOtRBMEIKbRNOIieQhSQHx-6sMguh6ZvydirQipn/pub )
 - [Docker 알아보아요! (2019)](https://mysetting.io/slides/docker-basic ) 
 - [생활 코딩 - docker](https://opentutorials.org/course/4781/30609 ) 
-- [Best practices for writing Dockerfiles 요약](https://docs.google.com/document/d/1gSJW9agm--xyeO3MuDzTT3XsFxdo3k250H_GrnRUQ9k/edit?usp=sharing )  
-    
+- [이재홍의 언제나 최신 Docker](http://www.pyrasis.com/jHLsAlwaysUpToDateDocker )
+- [Best practices for writing Dockerfiles 요약](https://docs.google.com/document/d/1gSJW9agm--xyeO3MuDzTT3XsFxdo3k250H_GrnRUQ9k/edit?usp=sharing )      
 - 실습 자료
     - [2024-01 컴투스 김성연님 실습 자료](/docker/docker-202301_ksy)
   	
@@ -127,24 +135,8 @@
 - [MySQL의 다양한 타임아웃 옵션](https://docs.google.com/document/d/1vc0lBdO1yWZu8Yj2tvOiR3VzsQxin4PbmSW7Rbm5HQY/edit?usp=sharing )
 - [수신기한이 지난 데이터를 MySQL에서 삭제할 때의 이야기](https://docs.google.com/document/d/e/2PACX-1vRLotins2K_uOZjf5WoYmspWvcvq18ykWHb8ec9gEOpP2JbYk0uqb5zYUu05k7z1TD7iGNLMmp6-Xh6/pub )
 - [MySQL에서 문자열의 유니크 제약 조건을 걸 때 조심할 것](https://docs.google.com/document/d/e/2PACX-1vQXcAf7fzqav158jt8gEkhmSoND3IHDH4SSs0p59W2A0nbUMY78NBgWf9M9HBCMRyzttn_kL4bad3xN/pub )
-- 트랜잭션, Lock
-    - [트랜잭션 격리 수준에 대한 요약](https://docs.google.com/document/d/e/2PACX-1vQOKAf9lYmJEx7BXBTv4dviFWlFFOG8TUmSvA7OtlCWgB8umDDIHl5C_VRh6IZ7npZD8ccpg_oXrkTY/pub )
-    - [MySQL 트랜잭션 격리 수준과 발생하는 법칙을 정리](https://docs.google.com/document/d/e/2PACX-1vRxc1rFVaFUjeqz4Xq9rwLes9Kujd1ijppwO0nJQUevSBHzKBKnDfgxedZM8h_OipELLd1eviXlg2Vr/pub )
-    - ["트랜잭션을 사용하면 괜찮다" 라고 생각하지 않습니까? 버그의 온상이 되는 일반적인 구현 패턴](https://docs.google.com/document/d/e/2PACX-1vR3GzvFiTdxpXZYgGxE6nSjwQPujpd1deohWFrnIEES8Vi6egUahEH4b685zdsX8O3h-gtqfDSfnnyd/pub )      
-    - [데이터베이스 락(Lock) 기초부터 교착 상태(데드락)까지](https://docs.google.com/document/d/e/2PACX-1vREFF4Ucc54rOjKjf7nast9ZCWqbRPdtN9JDY-MOq1u-1jTJjr5Bn0VjMBOrA36xeBHjPPBuL7FKQ-q/pub  ) 
-    - [MySQL의 갭락과 넥스트 키 락에 대해서](https://docs.google.com/document/d/12vBdawRbgs8vzRYG5e1r5WpOhRLfMhU0iXGWzVPZ5r8/edit?usp=sharing )
-    - [MySQL 8.0의 lock read의 NOWAIT와 SKIP LOCKED 옵션에 대해서](https://docs.google.com/document/d/1zDXKv_stqUwORs5d_R0S6t41YofUL2Y8xUrQfBBybPM/edit?usp=sharing )
-    - [UPDATE IN SELECT로 인한 교착 상태가 더 이상 발생하지 않게된 이야기](https://docs.google.com/document/d/e/2PACX-1vSebnl1juzCZsPd9vL0cGIwYtF4VxvNkK1r-jqwmsWGTBAUZSIci0qK2jHI76tIeia32sYRPLsPgqDx/pub )  
-    - [MySQL의 ALTER TABLE 문 실행 시 주의 사항](https://docs.google.com/document/d/e/2PACX-1vQyhU_YDZ7HmqdjQanORZAhUHYEUn-b8fj2TKPlaPe5ksfEBGa9OKhCKFK5EsJnP61HJmf-rHDFw0_h/pub ) 
-    - [MySQL(InnoDB)에서 각종 Lock 동작 알아보기](https://docs.google.com/document/d/e/2PACX-1vQ51LK8ym7wcjZmERz5RIB-AvH0QGIWYkbDs93Vv08Ml2i3kR-m4IwXxbo7FmWOFaIyCP41wnump3AN/pub ) 
-    - [Waiting for table metadata lock 대처 방법, 복습](https://docs.google.com/document/d/13MdqBaFR0G9IX1e-LrOo4QG2sLBEyODFt_Gvq4NTEBM/edit?usp=sharing )  
-    - [MySQL에서 발생할 수 있는 뜻밖의 데드락과 대응 방법](https://docs.google.com/document/d/e/2PACX-1vRp3cRZ-azq4bJFY52RT1U153lrrvVs7SwmQK8lbohnVKqL2TATKNdXaj-6eP4Kg8ho7yszasKX9ePj/pub )  
-    - [MySQL 메타데이터 Lock에 대해서](https://docs.google.com/document/d/e/2PACX-1vQ6wX6K7Mtk7vn530JqUXdBUCgtQmNW81sQHYjCaKTb9zk2V1TFyP_CW641FoKxf1HmrpH5vKzeCeXA/pub ) 
-    - [MySQL 온라인 DDL에서 Deadlock 오류가 발생하는 경우](https://docs.google.com/document/d/e/2PACX-1vRHjet16g6TCRP8mcS0wtFtoksZMSbVl78GfBkgtLxMuk3SKHDKP2kwnFZzmytlr8Dik22KKTa1JYKf/pub  )  
-
-   
+    
   
-
 ### Redis 
 - [레디스 게이트](http://www.redisgate.com/redis/command/latency.php ) 기능 설명
 - [(영상) Redis 야무지게 사용하기](https://forward.nhn.com/2021/sessions/16 ) 
@@ -163,7 +155,7 @@
   
 <br>    
 
-## 추천 영상 & 글
+## 추천 자료
 - [(인프런 무료 영상) 데이터베이스, 운영체제 기본 개념 정리](https://inf.run/Bp1R2  )
 - [(YOUTUBE) 컴퓨터 개념 및 실습_서울대학교 공과대학 민상렬 교수](https://www.youtube.com/playlist?list=PLpDJrhQ7qbNHjCGC42CrtGq1FXMskBi3K )
 - [(무료 인강) 개발자를 위한 컴퓨터공학 1: 혼자 공부하는 컴퓨터구조 + 운영체제](https://inf.run/b2yR )
@@ -191,17 +183,16 @@
 - [HTTPS에 대한 기초 이해](https://cheese10yun.github.io/https/ ) 
 - [멀티 플레이게임의 서버 형태와 그 특징에 대해서](http://bit.ly/2YXBjGV )
 - [게임 서버의 목차 - 시작부터 출시까지, NDC2019](https://www.slideshare.net/devcatpublications/ndc2019-142915563 )
-- [게임 서버 디자인 가이드, NDC2013](http://www.slideshare.net/devcatpublications/ndc2013-19986939 )
+- [게임 분산 서버 구조](http://www.slideshare.net/hyunjikbae1/ss-35206140 )
 - [온라인 게임 서버 구조와 테크닉](http://www.slideshare.net/imaifactory/ss-48388661 )
 - [라이브 서비스를 위한 게임 서버 구성](http://www.slideshare.net/hyunjikbae1/ss-60081243 )
-- [게임 분산 서버 구조](http://www.slideshare.net/hyunjikbae1/ss-35206140 )
-- [스마트폰 온라인 게임에서 고려해야 할 것들](http://www.slideshare.net/hyunjikbae1/ss-39522754 )
-- [C++ Korea 제9회 세미나 - 유지보수 편하게 게임 서버 만들기 (허린)](https://www.youtube.com/watch?v=NiDbkG_Eqpo )
 - [SKplanet Tacademy](https://www.youtube.com/channel/UCtV98yyffjUORQRGTuLHomw/playlists )
 - [국민대 자연공학 강좌 영상](http://ocw.kookmin.ac.kr/%EC%9E%90%EC%97%B0%EA%B3%B5%ED%95%99   )
 - [초보자를 위한 BigQuery(SQL) 입문( 무료 강의)](https://inf.run/MXKmF )
 - [개발 관련 유투브 모음(한글)](https://mp4.okdevtv.com/ )
-- [YOUTUBE 처음부터 시작하는 elastic](https://www.youtube.com/watch?v=Ks0P49B4OsA&list=PLhFRZgJc2afp0gaUnQf68kJHPXLG16YCf )
+- [YOUTUBE 처음부터 시작하는 elastic](https://www.youtube.com/watch?v=Ks0P49B4OsA&list=PLhFRZgJc2afp0gaUnQf68kJHPXLG16YCf )  
+
+- 코딩 시험을 위한 [awesome-algorithms](https://github.com/tayllan/awesome-algorithms )
   
   
   
