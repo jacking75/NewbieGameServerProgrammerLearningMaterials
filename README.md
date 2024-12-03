@@ -3,7 +3,9 @@
 - [A STUDY PATH FOR GAME PROGRAMMER](https://github.com/miloyip/game-programmer )
     - 각 분야별로 책을 중심으로 공부 방향을 알려줌
 - [Awesome Roadmaps Overview](https://www.trackawesomelist.com/liuchong/awesome-roadmaps/readme/ )  
-  
+- 더미 클라이언트
+    - 서버의 성능과 안정성을 확인하기 위해서는 더미 클라이언트를 사용하여 많은 클라이언트와 서버가 통신하여 동작하는 테스트를 꼭 해야한다.
+    - `auto_test` 디렉토리에는 C#으로 만든 더미 클라이언트의 코드가 있다. 이것을 참고해서 자신만의 더미 클라이언트를 만들기 바란다.  
   
 
 
@@ -45,13 +47,19 @@
 - [YOUTUBE 뇌를 자극하는 TCP/IP 소켓 프로그래밍](https://www.youtube.com/playlist?list=PLVsNizTWUw7GZy4UA9pntGRC9IIXIYiHm )
 - [YOUTUBE C++ Korea 제6회 세미나 - 채팅 서버 개발로 알아보는 C++의 기능들](https://youtu.be/JxejgUKTViQ )
 - [BeeJ's Guide to Network Programming - 인터넷 소켓 활용](https://blogofscience.com/Socket_Programming-KLDP.html )
+- [Linux 소켓 프로그래밍의 5가지 함정](https://docs.google.com/document/d/e/2PACX-1vRJNFor6dsmIjrEuyU-Y5J1YFrdL-7b6n3MLChvk_kieqh4WZKdNWot6iicaRfIA0QYLcXuGwMnvXJn/pub )
+- [무서운 SIGPIPE 소켓 프로그래밍의 함정](https://docs.google.com/document/d/e/2PACX-1vSR5CZL4bOzIHaSgiqmz1laD8XvHsL7TH3XRt-DZgZ048OzehawXuxwAjYPX_WQi2iQse-u4SenifEG/pub )
   
 
+### 라이브러리 
+- [Generic Callback Manager](https://docs.google.com/document/d/e/2PACX-1vSnIx0eNLRbTk0f8DGow3x4vzL1rvIWT6EBIf1B4jxtc7tZkpb_5lnywKqWdk2LOLfP02JdzMOZgEK8/pub )     
+
+
 ### 실습
+- [C++ 서버 프로그래밍 실습](https://github.com/jacking75/edu_cpp_server_programming )
 - [채팅 서버 만들기](https://www.youtube.com/watch?v=eiwvQ8NV2h8)
 - [단계 별로 IOCP 실습](https://github.com/jacking75/edu_cpp_IOCP )
 - [오래된 IOCP API를 사용한 네트워크 라이브러리](https://github.com/jacking75/edu_cpp_server_programming/tree/main/opensource/edu_CQNetLib-master ) 를 최신 C++ 코드로 리팩토링 한다
-- [C++ 서버 프로그래밍 실습](https://github.com/jacking75/edu_cpp_server_programming )
 - [C++로 HTTP 통신하기](https://github.com/jacking75/how_to_use_cpp_http_client )
       
 
@@ -77,16 +85,21 @@
 - SuperSocket
     - [Echo Server 만들기](https://www.youtube.com/watch?v=ZgzMuHE43hU )
     - [Chat Server 만들기](https://www.youtube.com/watch?v=eiwvQ8NV2h8 )
+- [NATS MQ를 이용한 서버간 통신](https://github.com/jacking75/edu_NATS_MQ )    
   
     
 <br>  
     
 ## Linux
+- [리눅스 얼마나 알아야할까? 이정도는 알고 있자!](https://docs.google.com/document/d/e/2PACX-1vT5lxY2rzJ12dKfNUa4ocx1cU-JMboaP26t4CE7BftRDjMCjMn4f-If1ZeKfeaJ4hz9cP0s3qFFlkRc/pub)
 - [(인프런 무료 영상) '이것이 리눅스다' 저자의 Red Hat CentOS7 리눅스 서버&네트워크 강좌 - 커리큘럼 총 57 개 ˙ 22시간 28분의 수업](https://inf.run/yf7K )   
 - [(인프런 무료 영상) 생활코딩 - Linux](https://inf.run/9Yxy ) 
 - [토크ON세미나 리눅스와 친해지기](https://www.youtube.com/watch?v=pgXYkzl35HM&list=PL9mhQYIlKEhc6Odsnn1igZ9Qd-fWasQI7 )
 - [Linux 기본 명령어 모음](./linux_basic_cmd.md )
 - [Bash 입문자를 위한 핵심 요약 정리 (Shell Script)](https://blog.gaerae.com/2015/01/bash-hello-world.html )
+- [Linux에서로드 밸런서와 캐시 서버를 멀티 코어 스케일 시키기 위한 커널 튜닝](https://docs.google.com/document/d/e/2PACX-1vRogx51-sYEMl5P6b5ZFWQWMycYqOF86rAUJ0Pgb1g28xFK2r4upfLqBglXhsATGLdMbvKmSIGnzuzF/pub )
+- [RPS, RFS 설정에 의한 Linux 네트워크 성능 향상](https://docs.google.com/document/d/e/2PACX-1vRACO_vLdA3FY7cxtcRNv5-QyXExYRinGSIWjorsVt3gFh_qTbQ_d4KRfQgC0teZER5efcjDBCucTBl/pub )
+
    
   
 ### WSL

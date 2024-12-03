@@ -1,0 +1,46 @@
+{
+  "Scenario": {
+    "Value": 4,
+    "Comment": "테스트 할 시나리오 번호"
+  },
+  "ScenarioRepeatCount": {
+    "Value": 0,
+    "Comment": "시나리오 반복 횟수 (값이 0이면 시나리오 진행 시간에 의해서만 테스트가 종료된다.)"
+  },
+  "ScenarioRunTimeSec": {
+    "Value": 60,
+    "Comment": "시나리오 진행 시간 (값이 0이면 시나리오 반복 횟수 도달에 의해서만 테스트가 종료된다.)"
+  },
+  "DummyCount": {
+    "Value": 3000,
+    "Comment": "더미 생성 개수"
+  },
+  "DummyStartNumber": {
+    "Value": 0,
+    "Comment": "더미 번호 부여 시 사용할 시작 번호"
+  },
+  "DummyActionTimeoutSec": {
+    "Value": 30,
+    "Comment": "더미 시나리오 액션 타임 아웃 시간"
+  },
+  "DummyActionIntervalMilliSec": {
+    "Value": 30,
+    "Comment": "더미 시나리오 액션 별 실행 간격 (ms)"
+  },
+  "RemoteEndPoint": {
+    "Value": "127.0.0.1:11024",
+    "Comment": "더미가 연결할 서버 접속 정보"
+  },
+  "RoomCount": {
+    "Value": 1500,
+    "Comment": "생성할 방 개수"
+  },
+  "RoomStartNumber": {
+    "Value": 0,
+    "Comment": "방 번호 부여 시 사용할 시작 번호"
+  },
+  "RoomUserMaxCount": {
+    "Value": 2,
+    "Comment": "방 수용 가능 인원"
+  }
+}
