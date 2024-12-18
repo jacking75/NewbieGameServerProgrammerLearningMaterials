@@ -99,7 +99,8 @@
 - [Bash 입문자를 위한 핵심 요약 정리 (Shell Script)](https://blog.gaerae.com/2015/01/bash-hello-world.html )
 - [Linux에서로드 밸런서와 캐시 서버를 멀티 코어 스케일 시키기 위한 커널 튜닝](https://docs.google.com/document/d/e/2PACX-1vRogx51-sYEMl5P6b5ZFWQWMycYqOF86rAUJ0Pgb1g28xFK2r4upfLqBglXhsATGLdMbvKmSIGnzuzF/pub )
 - [RPS, RFS 설정에 의한 Linux 네트워크 성능 향상](https://docs.google.com/document/d/e/2PACX-1vRACO_vLdA3FY7cxtcRNv5-QyXExYRinGSIWjorsVt3gFh_qTbQ_d4KRfQgC0teZER5efcjDBCucTBl/pub )
-
+  
+- [리눅스 사용 글 모음](https://gist.github.com/jacking75/7f45ed006cecaffd44b95049a5f8611c )
    
   
 ### WSL
@@ -110,6 +111,7 @@
 비 Linux에서 docker를 다룰 때는 `Docker for Desktop` 프로그램을 사용한다. **개인적인 용도로 사용할 때만 무료**   
 어디에서나 무료로 `Docker for Desktop` 같은 프로그램을 사용하고 싶다면 `Rancher Desktop` 을 추천한다.  
   
+- [글 모음](https://gist.github.com/jacking75/9409d7c5b9fab9a7ef66b2050f40423f )
 - [Windows에서 Docker 환경을 바꿨다 (Docker Desktop → Rancher Desktop)](https://docs.google.com/document/d/e/2PACX-1vSd9sgy5IWAk5J74YZ0ndqa7djhp3xh6IVSmu-gJOtRBMEIKbRNOIieQhSQHx-6sMguh6ZvydirQipn/pub )
 - [Docker 알아보아요! (2019)](https://mysetting.io/slides/docker-basic ) 
 - [생활 코딩 - docker](https://opentutorials.org/course/4781/30609 ) 
@@ -130,11 +132,8 @@
     - 모두의 SQL 누구나 쉽게 배우는 데이터 분석 기초
   
 ![그림 1장으로 이해하는 DB Sharding Explained](./db_sharding_explained.png)  원 출처: https://twitter.com/bibryam/status/1606316891307483136/photo/1      
-- [Index 이해하기](https://docs.google.com/document/d/e/2PACX-1vT6X6FvabSDrBe3WegIK4sGA4XQKTqlQs12grFRX2MOtLhvF6c3h39mmhALRvgpvDUdrHG08iX3NYVB/pub  )
-- [DBA가 개발자에게 가장 많은 질문을 받는 것들](https://docs.google.com/document/d/1lZfNpqHJhnt0eX-G5CNYaeW_Mmg3tTeufCVzOwwXxe0/edit?usp=sharing )
-- [SQL 약간의 퍼포먼스 튜닝 정리](https://docs.google.com/document/d/e/2PACX-1vQok3Ja_TOC-sL7XCTX1e5cPj_9fgpCiZLtwPORhVNSc-Cq7YoC0ND6cxYhDXS6EhdkW7Soqsrox6XY/pub ) 
-- [DB 튜닝에서 실제로 성과가 나온 3개의 지침](https://docs.google.com/document/d/e/2PACX-1vR-sqfIdM8w-gupjPsxzznIRn9XT8HznbKNLmrHBseBk6HRoZWHDaLzy6G8lwrVmUdbrc1z-Y9LiWWM/pub )  
-  
+- [DB 글 모음](https://gist.github.com/jacking75/a456ff34a8846b9438bc08956d67aaab  )
+    
 
 ### MySQL
 - 설치
@@ -151,6 +150,7 @@
     
   
 ### Redis 
+- [글 모음](https://gist.github.com/jacking75/5d9927851b22a539774301017e0cefd7)
 - [레디스 게이트](http://www.redisgate.com/redis/command/latency.php ) 기능 설명
 - [(영상) Redis 야무지게 사용하기](https://forward.nhn.com/2021/sessions/16 ) 
 - [Redis 글 모음](https://gist.github.com/jacking75/5d9927851b22a539774301017e0cefd7 ) 
@@ -206,6 +206,9 @@
 - [YOUTUBE 처음부터 시작하는 elastic](https://www.youtube.com/watch?v=Ks0P49B4OsA&list=PLhFRZgJc2afp0gaUnQf68kJHPXLG16YCf )  
 
 - 코딩 시험을 위한 [awesome-algorithms](https://github.com/tayllan/awesome-algorithms )
+- [코딩 잘 하기 글 모음](https://gist.github.com/jacking75/4a6f7b63804667638663c9e9641f8a04 )
+- [프로그래밍 지식 글 모음](https://gist.github.com/jacking75/c867fe935fa44c58fbb8525a78f8925f )
+- [GitHub Copilot 글 모음](https://gist.github.com/jacking75/42a920ab42aadfa2d9d49fc533a233e5 )
   
   
   
