@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DummyTester": {
+      "commandName": "Project",
+      "commandLineArgs": "OnlyConnect\r\nRepeatConnect\r\nRepeatLoginOut\r\nRepeatRoomEnterLeave \r\nRepeatRoomEnterChat\r\nOnlyPlayGame"
+    }
+  }
+}
