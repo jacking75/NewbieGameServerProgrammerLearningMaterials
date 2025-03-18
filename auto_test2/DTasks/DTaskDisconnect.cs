@@ -22,7 +22,7 @@ class DTaskDisconnect : DTask
         
 
         result.Ret = DTaskResultValue.Completed;
-        (result.NextDTaskWaitTimeMS, result.NextDTask) = NextTask();
+        (result.NextDTaskWaitTimeMS, result.NextDTaskIndex) = NextTask();
 
         Clear();
 

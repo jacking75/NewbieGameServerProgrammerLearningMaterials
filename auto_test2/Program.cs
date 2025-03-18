@@ -77,7 +77,7 @@ public class Program
             },
             {
               ""TaskName"": ""Disconnect"",
-              ""NextTaskProbabilityList"": [95, 5],
+              ""NextTaskProbabilityList"": [10, 90],
               ""NextTaskWaitMinTimeMSList"": [900, 900],
               ""NextTaskWaitMaxTimeMSList"": [1000, 1000],  
               ""NextTasks"": [""Connect"", ""TestEndCheck""]
@@ -87,7 +87,7 @@ public class Program
               ""NextTaskProbabilityList"": [100],
               ""NextTaskWaitMinTimeMSList"": [800],
               ""NextTaskWaitMaxTimeMSList"": [1000],
-              ""NextTasks"": [""Disconnect""]
+              ""NextTasks"": [""Connect""]
             }
           ]
         }";

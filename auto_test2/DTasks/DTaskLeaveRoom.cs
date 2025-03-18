@@ -24,7 +24,7 @@ class DTaskLeaveRoom : DTask
 
         //TODO: 임시로 연결을 성공처리 한다.
         result.Ret = DTaskResultValue.Completed;
-        (result.NextDTaskWaitTimeMS, result.NextDTask) = NextTask();
+        (result.NextDTaskWaitTimeMS, result.NextDTaskIndex) = NextTask();
         Clear();
 
         Log.Information("LeaveRoom");

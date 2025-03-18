@@ -29,25 +29,25 @@ class DTaskManager
     bool CreateTasks(TestConfig config)
     {
         _taskList.Add(new DTaskConnect());
-        _taskList[0].SetName("Connect");
+        _taskList[0].SetName("Connect", 0);
 
         _taskList.Add(new DTaskDisconnect());
-        _taskList[1].SetName("Disconnect");
+        _taskList[1].SetName("Disconnect", 1);
 
         _taskList.Add(new DTaskLogin());
-        _taskList[2].SetName("Login");
+        _taskList[2].SetName("Login", 2);
 
         _taskList.Add(new DTaskEnterRoom());
-        _taskList[3].SetName("EnterRoom");
+        _taskList[3].SetName("EnterRoom", 3);
 
         _taskList.Add(new DTaskLeaveRoom());
-        _taskList[4].SetName("LeaveRoom");
+        _taskList[4].SetName("LeaveRoom", 4);
 
         _taskList.Add(new DTaskChat());
-        _taskList[5].SetName("Chat");
+        _taskList[5].SetName("Chat", 5);
 
         _taskList.Add(new DTaskTestEndCheck());
-        _taskList[6].SetName("TestEndCheck");
+        _taskList[6].SetName("TestEndCheck", 6);
 
         return true;
     }
@@ -60,7 +60,7 @@ class DTaskManager
             for (int i = 0; i < taskConfig.NextTasks.Count; ++i)
             {
                 var nextTask = GetTask(taskConfig.NextTasks[i]);
-                task.AddNextTask(nextTask, 
+                task.AddNextTask(nextTask.Index, 
                                 taskConfig.NextTaskProbabilityList[i], 
                                 taskConfig.NextTaskWaitMinTimeMSList[i],
                                 taskConfig.NextTaskWaitMaxTimeMSList[i]);

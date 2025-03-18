@@ -9,11 +9,13 @@ namespace AutoTestClient.DTasks;
 
 public abstract class DTask
 {
+    public Int32 Index { get; set; } = -1;
+
     // 태스크를 복사할 때는 아래 필드들을 복사해야 한다.
     public string Name { get; protected set; } = string.Empty;
-    protected List<int> _nextTaskProbabilityList = new();
-    protected List<(int, int)> _nextTaskWaitTimeMSList = new();
-    protected List<DTask> _nextTaskList = new();
+    protected List<Int32> _nextTaskProbabilityList = new();
+    protected List<(Int32, Int32)> _nextTaskWaitTimeMSList = new();
+    protected List<Int32> _nextTaskIndexList = new();
 
     protected Random _random;
 
@@ -23,14 +25,14 @@ public abstract class DTask
 
     public DTask()
     {
-        _random = new Random((int)DateTime.Now.Ticks);
+        _random = new Random((Int32)DateTime.Now.Ticks);
     }
     protected void DeepCopy(DTask targetTask)
     {
         targetTask.Name = Name;
         
         //_nextTaskList.AddRange(targetTask._nextTaskList);
-        targetTask._nextTaskList.AddRange(_nextTaskList);
+        targetTask._nextTaskIndexList.AddRange(_nextTaskIndexList);
         
         //_nextTaskProbabilityList.AddRange(targetTask._nextTaskProbabilityList);
         targetTask._nextTaskProbabilityList.AddRange(_nextTaskProbabilityList);
@@ -48,7 +50,7 @@ public abstract class DTask
 
     protected abstract void Clear();
 
-    protected (Int32, DTask) NextTask()
+    protected (Int32, Int32) NextTask()
     {
         /*
          0에서 99 사이의 난수를 생성합니다 (확률 총합이 100이므로).
@@ -73,23 +75,24 @@ public abstract class DTask
             // 누적 확률이 난수보다 크거나 같으면 해당 인덱스의 태스크 선택
             if (randomValue < cumulativeProbability)
             {
-                return (_nextTaskWaitTimeMSList[i].Item1, _nextTaskList[i]);
+                return (_nextTaskWaitTimeMSList[i].Item1, _nextTaskIndexList[i]);
             }
         }
 
         // 혹시 모를 예외 상황을 위해 마지막 태스크 반환 (정상적으로는 여기까지 오지 않음)
-        int lastIndex = _nextTaskList.Count - 1;
-        return (_nextTaskWaitTimeMSList[lastIndex].Item1, _nextTaskList[lastIndex]);
+        int lastIndex = _nextTaskIndexList.Count - 1;
+        return (_nextTaskWaitTimeMSList[lastIndex].Item1, _nextTaskIndexList[lastIndex]);
     }
 
-    public void SetName(string name)
+    public void SetName(string name, Int32 index)
     {
         Name = name;
+        Index = index;
     }
 
-    public void AddNextTask(DTask task, int probability, int minWaitTimeMS, int maxWaitTimeMS)
+    public void AddNextTask(Int32 taskIndex, int probability, int minWaitTimeMS, int maxWaitTimeMS)
     {
-        _nextTaskList.Add(task);
+        _nextTaskIndexList.Add(taskIndex);
         _nextTaskProbabilityList.Add(probability);
         _nextTaskWaitTimeMSList.Add((minWaitTimeMS, maxWaitTimeMS));
     }

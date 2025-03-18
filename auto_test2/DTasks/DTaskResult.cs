@@ -9,7 +9,7 @@ namespace AutoTestClient.DTasks;
 public class DTaskResult
 {
     public DTaskResultValue Ret = DTaskResultValue.None;
-    public DTask NextDTask = null;
+    public Int32 NextDTaskIndex = 0;
     public Int32 NextDTaskWaitTimeMS = 0;
 }
 
