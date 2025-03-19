@@ -38,9 +38,9 @@ public class DummyObject
         _packetProcessor.Init(this);
 
         //TODO: 행동을 붙인다
-        //_action.Connect = Connect;
-        //_action.Disconnect = Disconnect;
-        //_action.Send = Send;
+        _action.Connect = _dNetwork.Connect;
+        _action.Disconnect = _dNetwork.Disconnect;
+        _action.SendPacket = _dNetwork.SendPacket;
 
 
         
@@ -64,9 +64,16 @@ public class DummyObject
 
             _taskList.Add(newTask);
         }
+
+
+        SetRuntimeData();
     }
 
-  
+    void SetRuntimeData()
+    {
+        _runTimeData.SetUserInfo(ID, "TEST_TOKEN");
+    }
+
 
     public async Task<DResult> Run()
     {
@@ -84,7 +91,7 @@ public class DummyObject
             {
                 curTask = _taskList[taskResult.NextDTaskIndex];
 
-                Log.Information($"[[Nwxt Task]] Duumy Number: {Number}, TaskName:{curTask.Name}");
+                Log.Information($"[[Next Task]] Duumy Number: {Number}, TaskName:{curTask.Name}");
                 await Task.Delay(taskResult.NextDTaskWaitTimeMS);
             }
             else if (taskResult.Ret == DTaskResultValue.Failed)

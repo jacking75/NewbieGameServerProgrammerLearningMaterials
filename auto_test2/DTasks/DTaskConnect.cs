@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Collections.Specialized.BitVector32;
 
 namespace AutoTestClient.DTasks;
 
@@ -12,7 +13,7 @@ public class DTaskConnect : DTask
 {
     string _ip;
     Int32 _port;
-    bool _isTryConnect = false;
+    
 
     public override void Set(RunTimeData runTimeData, DAction action)
     {
@@ -22,26 +23,23 @@ public class DTaskConnect : DTask
 
     public override async Task<DTaskResult> Run()
     {
-        await Task.CompletedTask;
         var result = new DTaskResult();
 
-        if (_isTryConnect == false)
+        Log.Information("Try Connected");
+
+        var errorCode = await _action.Connect(_ip, _port);
+        if (errorCode != 0)
         {
-            _isTryConnect = true;
+            Log.Error($"Connect Error. errorCode:{errorCode}");
 
-            Log.Information("Try Connected");
-
-            result.Ret = DTaskResultValue.Continue;
+            result.Ret = DTaskResultValue.Failed;
             return result;
         }
 
 
-        //TODO: 임시로 연결을 성공처리 한다.
-        result.Ret = DTaskResultValue.Completed;
-        (result.NextDTaskWaitTimeMS, result.NextDTaskIndex) = NextTask();
-        Clear();
-
-        Log.Information("Connected");
+        result = MakeTaskResultComplete();
+        
+        Log.Information("Connected Success");
         return result;
     }
 
@@ -56,7 +54,6 @@ public class DTaskConnect : DTask
 
     protected override void Clear()
     {
-        _isTryConnect = false;
     }
         
 

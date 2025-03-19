@@ -11,6 +11,8 @@ public abstract class DTask
 {
     public Int32 Index { get; set; } = -1;
 
+    protected DateTime _endTime;
+
     // 태스크를 복사할 때는 아래 필드들을 복사해야 한다.
     public string Name { get; protected set; } = string.Empty;
     protected List<Int32> _nextTaskProbabilityList = new();
@@ -49,6 +51,14 @@ public abstract class DTask
     public abstract DTask Clone();
 
     protected abstract void Clear();
+
+    protected DTaskResult MakeTaskResultComplete()
+    {
+        var result = new DTaskResult();
+        result.Ret = DTaskResultValue.Completed;
+        (result.NextDTaskWaitTimeMS, result.NextDTaskIndex) = NextTask();
+        return result;
+    }
 
     protected (Int32, Int32) NextTask()
     {

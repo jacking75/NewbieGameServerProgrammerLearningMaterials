@@ -64,7 +64,7 @@ public class Program
         string config = @"{
           ""DummyCount"": 2,
           ""DummyStartNumber"": 1,
-          ""RemoteEndPoint"": ""127.0.0.1:32021"",
+          ""RemoteEndPoint"": ""127.0.0.1:32452"",
           ""ScenarioName"": ""BasicChatTest"",
           ""TestRunTimeMS"": 30000,
           ""TaskConfigs"": [

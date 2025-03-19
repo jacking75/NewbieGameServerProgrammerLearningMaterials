@@ -57,32 +57,39 @@ public class DNetwork
         return ErrorCode.None;
     }
 
-    protected async Task<ErrorCode> Connect(string ip, Int32 port)
+    public async Task<ErrorCode> Connect(string ip, Int32 port)
     {
-        var socketError = await _connection.Connect(ip, port);
-        if (socketError != 0)
+        var connectedCount = 0;
+
+        while (connectedCount <= 7)
         {
-            if (socketError == 10061)   // 서버에 접속 자체가 불가능한 경우는 그냥 실패
+            var socketError = await _connection.Connect(ip, port);
+            if (socketError == 0)
             {
-                return ErrorCode.FailedConnect;
+                return ErrorCode.None;
             }
 
             if (socketError == 10048)   // 서버쪽에서 아직 소켓 닫는 중이었다면, 잠시 대기 후 재시도.
             {
+                ++connectedCount;
+                await Task.Delay(1000);
+
+                continue;
+            }
+            else
+            {
+                //socketError == 10061   서버에 접속 자체가 불가능한 경우는 그냥 실패
                 return ErrorCode.FailedConnect;
             }
+        }
 
-            return ErrorCode.FailedConnect;
-        }
-        else
-        {
-            ++ConnectedCount;
-            return ErrorCode.None;
-        }
+        return ErrorCode.FailedConnect;
     }
 
-    protected ErrorCode Disconnect()
+    public ErrorCode Disconnect()
     {
+        ConnectedCount = 0;
+
         var socketError = _connection.Close();
         if (socketError != 0)
         {
@@ -92,7 +99,7 @@ public class DNetwork
         return ErrorCode.None;
     }
 
-    protected async Task<ErrorCode> SendPacket(byte[] source)
+    public async Task<ErrorCode> SendPacket(byte[] source)
     {
         var (socketError, sendBytes) = await _connection.Send(source);
 
@@ -106,7 +113,7 @@ public class DNetwork
         return ErrorCode.None;
     }
 
-    protected void AddPacketToPacketProcessor(List<ReceivePacketInfo> packets)
+    public void AddPacketToPacketProcessor(List<ReceivePacketInfo> packets)
     {
         foreach (var packet in packets)
         {

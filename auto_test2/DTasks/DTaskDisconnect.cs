@@ -15,18 +15,17 @@ class DTaskDisconnect : DTask
 
     public override async Task<DTaskResult> Run()
     {
-        await Task.CompletedTask;
         var result = new DTaskResult();
 
-        //TODO: 연결 상태를 확인하고 끊어지도록 한다
-        
+        _action.Disconnect();
 
-        result.Ret = DTaskResultValue.Completed;
-        (result.NextDTaskWaitTimeMS, result.NextDTaskIndex) = NextTask();
+        result = MakeTaskResultComplete();
 
         Clear();
 
-        Log.Information("Disconnected");
+        Log.Information("Disconnected Success");
+
+        await Task.CompletedTask;
         return result;
     }
 

@@ -13,8 +13,7 @@ namespace AutoTestClient.DTasks;
 
 public class DTaskTestEndCheck : DTask
 {
-    DateTime _endTime;
-
+    
     public override void Set(RunTimeData runTimeData, DAction action)
     {
         _runTimeData = runTimeData;
