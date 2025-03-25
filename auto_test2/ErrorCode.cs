@@ -18,6 +18,9 @@
         InvalidRoomStartNumber,
         InvalidRoomUserMaxCount,
 
+        // Login (20501 ~ 20600)
+        UnableRequestLoginNotConnected = 20501,
+
         // Room (20801 ~ 20900)
         FailedRoomEnterIsFullRoom = 20801,
         FailedRoomEnterInvalidRoomNumber,

@@ -14,9 +14,16 @@ public class DAction
     public Func<ErrorCode> Disconnect;
     public Func<byte[], Task<ErrorCode>> SendPacket;
 
+    public Func<bool> IsConnected;
+
 
     public async Task<ErrorCode> RequestLogin(string userID, string passWord)
     {
+        if(IsConnected() == false)
+        {
+            return ErrorCode.UnableRequestLoginNotConnected;
+        }   
+
         var packet = PacketFactory.GetReqLogin(userID, passWord);
         var errorCode = await SendPacket(packet);
         if (errorCode != ErrorCode.None)
@@ -26,4 +33,45 @@ public class DAction
 
         return ErrorCode.None;
     }
+
+    public async Task<ErrorCode> RequestEnterRoom(int roomNumber)
+    {
+        var packet = PacketFactory.GetReqRoomEnter(roomNumber);
+
+        var errorCode = await SendPacket(packet);
+        if (errorCode != ErrorCode.None)
+        {
+            return errorCode;
+        }
+
+        return ErrorCode.None;
+    }
+
+    public async Task<ErrorCode> RequestLeaveRoom()
+    {
+        var packet = PacketFactory.GetReqRoomLeave();
+
+        var errorCode = await SendPacket(packet);
+        if (errorCode != ErrorCode.None)
+        {
+            return errorCode;
+        }
+
+        return ErrorCode.None;
+    }
+
+    public async Task<ErrorCode> RequestChatRoom(string chatMessage)
+    {
+        var packet = PacketFactory.GetReqRoomChat(chatMessage);
+
+        var errorCode = await SendPacket(packet);
+        if (errorCode != ErrorCode.None)
+        {
+            return errorCode;
+        }
+
+        return ErrorCode.None;
+    }
+
+
 }

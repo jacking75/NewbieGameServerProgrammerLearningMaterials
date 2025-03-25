@@ -11,6 +11,8 @@ public abstract class DTask
 {
     public Int32 Index { get; set; } = -1;
 
+    protected bool _alreadyActed = false;
+
     protected DateTime _endTime;
 
     // 태스크를 복사할 때는 아래 필드들을 복사해야 한다.
@@ -50,7 +52,7 @@ public abstract class DTask
         
     public abstract DTask Clone();
 
-    protected abstract void Clear();
+    public abstract void Clear();
 
     protected DTaskResult MakeTaskResultComplete()
     {
@@ -92,6 +94,21 @@ public abstract class DTask
         // 혹시 모를 예외 상황을 위해 마지막 태스크 반환 (정상적으로는 여기까지 오지 않음)
         int lastIndex = _nextTaskIndexList.Count - 1;
         return (_nextTaskWaitTimeMSList[lastIndex].Item1, _nextTaskIndexList[lastIndex]);
+    }
+
+    protected (bool, DTaskResult) CheckTimeout()
+    {
+        var result = new DTaskResult();
+
+        if (DateTime.Now >= _endTime)
+        {
+
+            result.Ret = DTaskResultValue.Failed;
+            return (true, result);
+        }
+
+        result.Ret = DTaskResultValue.Continue;
+        return (false, null);
     }
 
     public void SetName(string name, Int32 index)

@@ -12,6 +12,12 @@ public class TestConfig
     // 테스트 실행 시간
     public Int32 TestRunTimeMS { get; set; } = 60000; // 60초
 
+    
+    public Int32 MaxRoomCount { get; set; } = 32;
+    public Int32 RoomStartNumber { get; set; } = 1;
+    public Int32 RoomUserMaxCount { get; set; } = 2;
+
+
     public List<TaskConfig> TaskConfigs { get; set; }   
     
     public string RemoteEndPoint { get; set; }

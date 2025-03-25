@@ -23,13 +23,15 @@ public class DTaskTestEndCheck : DTask
     }
 
     public override async Task<DTaskResult> Run()
-    {        
+    {
+        Log.Information($"[TestEndCheck Try] Dummy: {_runTimeData.DummyNumber}");
+
+
         var result = new DTaskResult();
 
         if (DateTime.Now < _endTime)    
         {
-            result.Ret = DTaskResultValue.Completed;
-            (result.NextDTaskWaitTimeMS, result.NextDTaskIndex) = NextTask();
+            result = MakeTaskResultComplete();
             return result;
         }
 
@@ -37,10 +39,11 @@ public class DTaskTestEndCheck : DTask
         result.Ret = DTaskResultValue.Terminated;
         result.NextDTaskIndex = 0;
         
-        Log.Information($"Test End. endTime:{_endTime}");
+        //Log.Debug($"Test End. endTime:{_endTime}");
         await Task.CompletedTask;
-
         Clear();
+
+        Log.Information($"[TestEndCheck] Dummy: {_runTimeData.DummyNumber}");
         return result;
     }
 
@@ -54,8 +57,8 @@ public class DTaskTestEndCheck : DTask
         return task;
     }
 
-    
-    protected override void Clear()
+
+    public override void Clear()
     {
     }
 

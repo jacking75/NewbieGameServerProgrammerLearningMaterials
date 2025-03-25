@@ -21,7 +21,24 @@ public class DNetwork
     private CustomSocket _connection;
 
     private DateTime _sendTime;
-    
+
+
+    public void InitNetworkConfig(TestConfig config)
+    {
+        _connection = new CustomSocket();
+        _recvBuffer.Init(_recvBufferSize, CSCommon.PacketHeadReadWrite.HeadSize);
+
+
+        var remoteInfos = config.RemoteEndPoint.Split(":");
+        _remoteIP = remoteInfos[0];
+        _remotePort = Int32.Parse(remoteInfos[1]);
+
+    }
+
+    public bool IsConnected()
+    {
+        return _connection.IsConnected();
+    }
 
     public void UpdateRTT()
     {
@@ -121,16 +138,6 @@ public class DNetwork
         }
     }
 
-    public void InitNetworkConfig(TestConfig config)
-    {
-        _connection = new CustomSocket();
-        _recvBuffer.Init(_recvBufferSize, CSCommon.PacketHeadReadWrite.HeadSize);
-
-
-        var remoteInfos = config.RemoteEndPoint.Split(":");
-        _remoteIP = remoteInfos[0];
-        _remotePort = Int32.Parse(remoteInfos[1]);
-        
-    }
+    
 }
 

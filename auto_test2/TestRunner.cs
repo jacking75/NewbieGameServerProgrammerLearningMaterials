@@ -1,4 +1,6 @@
 ﻿
+using AutoTestClient.DTasks;
+
 namespace AutoTestClient;
 
 public class TestRunner
@@ -11,7 +13,9 @@ public class TestRunner
     public void Init(TestConfig config)
     {
         _config = config;
-        
+
+        RoomNumberAllocator.Init(config);
+
         _dummyMgr.Init(config);
 
         AutoTestMonitor.Instance.Init();        

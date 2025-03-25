@@ -9,17 +9,15 @@ public class ResponseRoomEnter : BaseHandler
 {
     public override void Handle(DummyObject dummy, byte[] packet)
     {
-        /*// 응답 확인
         var responseData = MemoryPackSerializer.Deserialize<PKTResRoomEnter>(packet);
         var errorCode = (CSCommon.ErrorCode)responseData.ErrorCode;
         if (errorCode != CSCommon.ErrorCode.None)
         {
-            Monitor.IncreaseFailedActionCount();
-
-            dummy.ScenarioDone(false, $"Failed RoomEnter with error : {errorCode}");
+            Console.WriteLine($"Failed EnterRoom with error : {errorCode}");
+            dummy.GetRunTimeData().AddError(errorCode, $"Failed Enter Room with error");
             return;
         }
 
-        dummy.RoomEnterSuccessAction();*/
+        dummy.GetRunTimeData().SetState(DummyState.Room);
     }
 }

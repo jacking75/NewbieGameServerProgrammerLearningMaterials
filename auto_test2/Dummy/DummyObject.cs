@@ -22,7 +22,14 @@ public class DummyObject
     
     List<DTask> _taskList = new();
 
-    //public DummnyState CurrnetState { get; protected set; } = DummnyState.None;
+    
+
+
+    public RunTimeData GetRunTimeData()
+    {
+        return _runTimeData;
+    }
+
 
 
     public void Init(Int32 index, Int32 number, TestConfig config, List<DTask> taskList)
@@ -37,13 +44,14 @@ public class DummyObject
 
         _packetProcessor.Init(this);
 
-        //TODO: 행동을 붙인다
         _action.Connect = _dNetwork.Connect;
         _action.Disconnect = _dNetwork.Disconnect;
         _action.SendPacket = _dNetwork.SendPacket;
+        _action.IsConnected = _dNetwork.IsConnected;
 
 
-        
+
+
         foreach (var task in taskList)
         {
             var newTask = task.Clone();
@@ -71,7 +79,7 @@ public class DummyObject
 
     void SetRuntimeData()
     {
-        _runTimeData.SetUserInfo(ID, "TEST_TOKEN");
+        _runTimeData.SetUserInfo(ID, "TEST_TOKEN", Index, Number);
     }
 
 
@@ -104,6 +112,12 @@ public class DummyObject
                 break;
             }
 
+            if(_runTimeData.HasError())
+            {
+                Log.Error($"[Terminate Dummy] Task Error. Duumy Number: {Number}");
+                break;
+            }
+
             //클라이언트가 60프레임으로 동작하는 것을 가정해서 1프레임에 해당하는 시간을 기다린다.
             await Task.Delay(16);
         }
@@ -112,4 +126,6 @@ public class DummyObject
 
         return result;
     }
+
+    
 }

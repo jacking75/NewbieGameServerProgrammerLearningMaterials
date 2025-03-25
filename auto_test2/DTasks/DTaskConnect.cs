@@ -23,9 +23,10 @@ public class DTaskConnect : DTask
 
     public override async Task<DTaskResult> Run()
     {
-        var result = new DTaskResult();
+        Log.Information($"[Connect Try] Dummy: {_runTimeData.DummyNumber}");
 
-        Log.Information("Try Connected");
+
+        var result = new DTaskResult();
 
         var errorCode = await _action.Connect(_ip, _port);
         if (errorCode != 0)
@@ -38,8 +39,8 @@ public class DTaskConnect : DTask
 
 
         result = MakeTaskResultComplete();
-        
-        Log.Information("Connected Success");
+
+        Log.Information($"[Connect Success] Dummy: {_runTimeData.DummyNumber}");
         return result;
     }
 
@@ -52,7 +53,7 @@ public class DTaskConnect : DTask
         return task;
     }
 
-    protected override void Clear()
+    public override void Clear()
     {
     }
         

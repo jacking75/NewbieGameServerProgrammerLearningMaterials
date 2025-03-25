@@ -11,7 +11,7 @@ public enum DummyState
     None = 0,
     Connect = 1,
     Login = 2,
-    RoomEnter = 3,
+    Room = 3,
     
     
 }

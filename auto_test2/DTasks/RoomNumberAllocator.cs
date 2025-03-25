@@ -3,37 +3,35 @@
 namespace AutoTestClient.DTasks;
 
 
-/*
 public class RoomNumberAllocator
 {
-    private ConcurrentQueue<Int32> _numbers = new();
+    static private ConcurrentQueue<Int32> _numbers = new();
 
-    public void Init(TestConfig config)
+    static public void Init(TestConfig config)
     {
-        var count = config.RoomCount.Value;
-        var startNumber = config.RoomStartNumber.Value;
+        var count = config.MaxRoomCount;
+        var startNumber = config.RoomStartNumber;
+
         for (Int32 i = 0; i < count; i++)
         {
-            for (Int32 j = 0; j < config.RoomUserMaxCount.Value; j++)
+            for (Int32 j = 0; j < config.RoomUserMaxCount; j++)
             {
                 _numbers.Enqueue(startNumber + i);
             }
         }
     }
 
-    public Int32 Alloc()
+    static public Int32 Alloc()
     {
-        Int32 roomNumber;
-
-        if (_numbers.TryDequeue(out roomNumber) == false)
+        if (_numbers.TryDequeue(out var roomNumber))
         {
-            return -1;
+            return roomNumber;
         }
 
-        return roomNumber;
+        return -1;
     }
 
-    public void Release(Int32 roomNumber) => _numbers.Enqueue(roomNumber);
+    static public void Release(Int32 roomNumber) => _numbers.Enqueue(roomNumber);
+
 }
 
-*/

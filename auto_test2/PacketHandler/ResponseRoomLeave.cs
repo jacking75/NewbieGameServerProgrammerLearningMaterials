@@ -2,6 +2,7 @@
 using CSCommon;
 
 using MemoryPack;
+using Serilog;
 
 namespace AutoTestClient.PacketHandler;
 
@@ -9,17 +10,17 @@ public class ResponseRoomLeave : BaseHandler
 {
     public override void Handle(DummyObject dummy, byte[] packet)
     {
-        /*// 응답 확인
         var responseData = MemoryPackSerializer.Deserialize<PKTResRoomLeave>(packet);
+
         var errorCode = (CSCommon.ErrorCode)responseData.ErrorCode;
         if (errorCode != CSCommon.ErrorCode.None)
         {
-            Monitor.IncreaseFailedActionCount();
+            Log.Error($"[ResponseRoomLeave] Failed LeaveRoom with error : {errorCode}");
 
-            dummy.ScenarioDone(false, $"Failed RoomLeave with error : {errorCode}");
+            dummy.GetRunTimeData().AddError(errorCode, $"Failed LeaveRoom with error");
             return;
         }
 
-        dummy.RoomLeaveSuccessAction();*/
+        dummy.GetRunTimeData().SetState(DummyState.Login);
     }
 }

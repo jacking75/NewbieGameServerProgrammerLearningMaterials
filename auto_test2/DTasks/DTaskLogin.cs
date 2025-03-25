@@ -13,9 +13,7 @@ namespace AutoTestClient.DTasks;
 class DTaskLogin : DTask
 {
     const int WaitTimeMS = 5000;
-    bool _isTryLogin = false;
     
-
 
     public override void Set(RunTimeData runTimeData, DAction action)
     {
@@ -25,46 +23,26 @@ class DTaskLogin : DTask
     public override async Task<DTaskResult> Run()
     {
         Log.Information("Try - Login");
-
-        var result = new DTaskResult();
-        
+                        
         // 로그인을 하지 않았다면 로그인을 시도한다.
-        if(_isTryLogin == false)
+        if(_alreadyActed == false)
         {
-            _endTime = DateTime.Now.AddMilliseconds(WaitTimeMS);
-
-            var errorCode = await _action.RequestLogin(_runTimeData.UserID, _runTimeData.PassWord);
-            if (errorCode != ErrorCode.None)
-            {
-                Log.Error($"Login Error. errorCode:{errorCode}");
-                result.Ret = DTaskResultValue.Failed;
-                return result;
-            }
-
-            result.Ret = DTaskResultValue.Continue;
-            return result;
+            var actionRet = await ActionRequestLogin();
+            return actionRet;            
         }
+
 
         // 로그인이 되었는지 확인한다.
-        if(_runTimeData.IsLoginState())
+        var (ischk1, ret1) = CheckSuccessful();
+        if (ischk1)
         {
-            Log.Information("Login Success");
-
-            result = MakeTaskResultComplete();
-            return result;
-        }   
-
-
-        // 대기 시간이 넘으면 실패로 처리한다.
-        if (DateTime.Now >= _endTime)
-        {
-            result.Ret = DTaskResultValue.Failed;
-            return result;
+            Log.Information($"[Login Success] Dummy: {_runTimeData.DummyNumber}");
+            return ret1;
         }
 
-
-        result.Ret = DTaskResultValue.Continue;
-        return result;
+        // 대기 시간이 넘으면 실패로 처리한다.
+        var (_, ret2) = CheckTimeout();
+        return ret2;        
     }
 
     public override DTask Clone()
@@ -75,9 +53,39 @@ class DTaskLogin : DTask
         return task;
     }
 
-    
-    protected override void Clear()
+
+    public override void Clear()
     {
-        _isTryLogin = false;
+        _alreadyActed = false;
     }
+
+    async Task<DTaskResult> ActionRequestLogin()
+    {
+        _endTime = DateTime.Now.AddMilliseconds(WaitTimeMS);
+
+        var errorCode = await _action.RequestLogin(_runTimeData.UserID, _runTimeData.PassWord);
+        if (errorCode != ErrorCode.None)
+        {
+            Log.Error($"Login Error. errorCode:{errorCode}");
+            var result = new DTaskResult() { Ret = DTaskResultValue.Failed };
+            return result;
+        }
+
+        var ret = new DTaskResult() { Ret = DTaskResultValue.Continue };
+        return ret;
+    }
+
+    (bool, DTaskResult) CheckSuccessful()
+    {
+        if (_runTimeData.IsLogin())
+        {
+            var result = MakeTaskResultComplete();
+            return (true, result);
+        }
+
+        var ret = new DTaskResult() { Ret = DTaskResultValue.Continue };
+        return (false, ret);
+    }
+        
+
 }

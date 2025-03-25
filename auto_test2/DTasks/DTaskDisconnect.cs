@@ -15,6 +15,9 @@ class DTaskDisconnect : DTask
 
     public override async Task<DTaskResult> Run()
     {
+        Log.Information($"[DisConnect Try] Dummy: {_runTimeData.DummyNumber}");
+
+
         var result = new DTaskResult();
 
         _action.Disconnect();
@@ -23,8 +26,8 @@ class DTaskDisconnect : DTask
 
         Clear();
 
-        Log.Information("Disconnected Success");
 
+        Log.Information($"[DisConnect Success] Dummy: {_runTimeData.DummyNumber}");
         await Task.CompletedTask;
         return result;
     }
@@ -37,8 +40,8 @@ class DTaskDisconnect : DTask
         return task;
     }
 
-    
-    protected override void Clear()
+
+    public override void Clear()
     {
     }
 }

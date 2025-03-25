@@ -63,10 +63,13 @@ public class Program
     {
         string config = @"{
           ""DummyCount"": 2,
-          ""DummyStartNumber"": 1,
+          ""DummyStartNumber"": 0,
           ""RemoteEndPoint"": ""127.0.0.1:32452"",
           ""ScenarioName"": ""BasicChatTest"",
           ""TestRunTimeMS"": 30000,
+          ""MaxRoomCount"" : 8,
+          ""RoomStartNumber"" : 1,
+          ""RoomUserMaxCount"" : 2,
           ""TaskConfigs"": [
             {
               ""TaskName"": ""Connect"",
@@ -91,64 +94,7 @@ public class Program
             }
           ]
         }";
-        /*string config = @"{
-          ""DummyCount"": 100,
-          ""DummyStartNumber"": 1,
-          ""RemoteEndPoint"": ""127.0.0.1:32021"",
-          ""ScenarioName"": ""BasicChatTest"",
-          ""TaskConfigs"": [
-            {
-              ""TaskName"": ""Connect"",
-              ""NextTaskProbabilityList"": [70, 30],
-              ""NextTaskWaitMinTimeMSList"": [900, 900],
-              ""NextTaskWaitMaxTimeMSList"": [1000, 1000],  
-              ""NextTasks"": [""Login"", ""Disconnect""]
-            },
-            {
-              ""TaskName"": ""Disconnect"",
-              ""NextTaskProbabilityList"": [95, 5],
-              ""NextTaskWaitMinTimeMSList"": [900, 900],
-              ""NextTaskWaitMaxTimeMSList"": [1000, 1000],  
-              ""NextTasks"": [""Connect"", ""TestEndCheck""]
-            },
-            {
-              ""TaskName"": ""Login"",
-              ""NextTaskProbabilityList"": [90, 10],
-              ""NextTaskWaitMinTimeMSList"": [900, 900],
-              ""NextTaskWaitMaxTimeMSList"": [1000, 1000],
-              ""NextTasks"": [""EnterRoom"", ""Disconnect""]
-            },
-            {
-              ""TaskName"": ""EnterRoom"",
-              ""NextTaskProbabilityList"": [60, 40],
-              ""NextTaskWaitMinTimeMSList"": [100, 100],
-              ""NextTaskWaitMaxTimeMSList"": [2000, 2000],
-              ""NextTasks"": [""Chat"", ""LeaveRoom""]
-            },
-            {
-              ""TaskName"": ""LeaveRoom"",
-              ""NextTaskProbabilityList"": [30, 70],
-              ""NextTaskWaitMinTimeMSList"": [1000, 1500],
-              ""NextTaskWaitMaxTimeMSList"": [1500, 2000],
-              ""NextTasks"": [""Disonnect"", ""EnterRoom""]
-            },
-            {
-              ""TaskName"": ""Chat"",
-              ""NextTaskProbabilityList"": [60, 40],
-              ""NextTaskWaitMinTimeMSList"": [2000, 1000],
-              ""NextTaskWaitMaxTimeMSList"": [2500, 1500],
-              ""NextTasks"": [""Chat"", ""LeaveRoom""]
-            },
-            {
-              ""TaskName"": ""TestEndCheck"",
-              ""NextTaskProbabilityList"": [100],
-              ""NextTaskWaitMinTimeMSList"": [800],
-              ""NextTaskWaitMaxTimeMSList"": [1000],
-              ""NextTasks"": [""Disconnect""]
-            }
-          ]
-        }";*/
-
+        
         return config;
     }
 }
