@@ -1940,6 +1940,8 @@ Windows에서 네트워크 프로그래밍을 하기 위해 Winsock API를 사�
 ## 02 TCP 서버-클라이언트 분석
 
 ### TCP 서버 구현
+![TCP 서버 프로그램의 스레드](./images/010.png)   
+  
 다음은 C++23과 최신 Win32 API를 사용한 TCP 서버 구현 예시입니다:  
 `codes/tcp_server_02`  
 
