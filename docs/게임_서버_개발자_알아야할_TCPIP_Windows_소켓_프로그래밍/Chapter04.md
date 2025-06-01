@@ -1,4 +1,4 @@
-# 게임 서버 개발자 알아야할 TCP/IP Windows 소켓 프로그래밍
+# 게임 서버 개발자가 알아야할 TCP/IP Windows 소켓 프로그래밍
 
 저자: 최흥배, Claude AI  
 
