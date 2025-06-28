@@ -10974,7 +10974,7 @@ private:
 
 <br>      
   
-# Chapter.10 소켓 입출력 모델: select 방식의 채팅 서버
+# Chapter.10 select 방식의 채팅 서버
 - [GitHub](https://github.com/heungbae-com2us/SelectChatServer )  
 - [DeepWiki](https://deepwiki.com/heungbae-com2us/SelectChatServer/1-overview )  
 - `code/SelectChatServer` 에도 소스가 있다.
