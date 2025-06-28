@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="PacketProcess.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="UserManager.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="ConsoleLogger.h" />
+    <ClInclude Include="ConnectedUserManager.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Lobby.h" />
+    <ClInclude Include="LobbyManager.h" />
+    <ClInclude Include="..\..\Common\conmanip.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ErrorCode.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Packet.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PacketID.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PacketProcess.cpp" />
+    <ClCompile Include="PacketProcessLogin.cpp" />
+    <ClCompile Include="UserManager.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="PacketProcessLobby.cpp" />
+    <ClCompile Include="PacketProcessRoom.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Lobby.cpp" />
+    <ClCompile Include="LobbyManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{18a3af02-6e7b-4382-8391-7123f58a3b93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

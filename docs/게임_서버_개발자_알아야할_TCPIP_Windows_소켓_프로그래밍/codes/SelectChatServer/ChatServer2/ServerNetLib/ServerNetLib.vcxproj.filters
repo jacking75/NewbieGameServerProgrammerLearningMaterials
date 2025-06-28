@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="TcpNetwork.h" />
+    <ClInclude Include="ServerNetErrorCode.h" />
+    <ClInclude Include="Define.h" />
+    <ClInclude Include="ILog.h" />
+    <ClInclude Include="ITcpNetwork.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TcpNetwork.cpp" />
+  </ItemGroup>
+</Project>
