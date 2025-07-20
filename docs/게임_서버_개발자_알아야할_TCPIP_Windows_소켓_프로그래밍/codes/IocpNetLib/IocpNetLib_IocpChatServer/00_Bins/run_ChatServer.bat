@@ -1,0 +1,1 @@
+ConsoleHost.exe --port=12021 --WorkThreadCount=4 --MaxRecvConnectionBufferSize=1024 --MaxSendConnectionBufferSize=1024  --MaxPacketSize=1024 --MaxConnectionCount=1024 --MaxMessagePoolCount=1024 --ExtraMessagePoolCount=128 --StartRoomNumber=0 --MaxRoomCnt=10 --MaxRoomUserCnt=10

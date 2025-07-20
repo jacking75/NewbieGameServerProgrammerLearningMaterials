@@ -1,0 +1,8 @@
+@startuml
+participant Client_모두
+participant Client
+participant GameServer
+Client -> GameServer: ROOM_CHAT_REQ
+Client <- GameServer: ROOM_CHAT_RES
+Client_모두 <- GameServer: ROOM_CHAT_NOTIFY
+@enduml

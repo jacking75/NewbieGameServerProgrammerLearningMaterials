@@ -1,0 +1,4 @@
+@startuml
+Client -> GameServer: LOGIN_REQUEST
+Client <- GameServer: LOGIN_RESPONSE
+@enduml
