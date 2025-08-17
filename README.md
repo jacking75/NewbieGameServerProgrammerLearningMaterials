@@ -21,6 +21,34 @@
     - [ChatGPT에서 기억해두면 유용한 Markdown 표기법 5가지](https://docs.google.com/document/d/e/2PACX-1vR3H0dks98hJdcYPxAW2kBV3C1jFpeDBt7rq5t7JThnszD-ONmJDrDX60KDKsrearOuTFpOVhMeG3R6/pub )
     - [인지적 프롬프팅](https://docs.google.com/presentation/d/1kayepoiTVT838Tetk02nxeqVmmS9BDc9O7n-4OzJdL8/mobilepresent?slide=id.p )  
   
+
+## 네트워크 프로그래밍 
+  
+- [게임 서버 개발자가 알아야할 네트워크 이론](https://www.youtube.com/watch?v=G60c4YuSBhU)  
+
+- C++
+    - [(YOUTUBE) 게임 서버 개발자가 알아야할 TCP/IP Windows 소켓 프로그래밍](https://www.youtube.com/watch?v=MYZZrLN1dJo&list=PLW_xyUw4fSdZ9E4SaOOydJOiuFGchy5HI )
+    - [(YOUTUBE) 뇌를 자극하는 TCP/IP 소켓 프로그래밍](https://www.youtube.com/playlist?list=PLVsNizTWUw7GZy4UA9pntGRC9IIXIYiHm )
+    - [(YOUTUBE) C++ Korea 제6회 세미나 - 채팅 서버 개발로 알아보는 C++의 기능들](https://youtu.be/JxejgUKTViQ )
+    - [BeeJ's Guide to Network Programming - 인터넷 소켓 활용](https://blogofscience.com/Socket_Programming-KLDP.html )
+    - [Linux 소켓 프로그래밍의 5가지 함정](https://docs.google.com/document/d/e/2PACX-1vRJNFor6dsmIjrEuyU-Y5J1YFrdL-7b6n3MLChvk_kieqh4WZKdNWot6iicaRfIA0QYLcXuGwMnvXJn/pub )
+    - [무서운 SIGPIPE 소켓 프로그래밍의 함정](https://docs.google.com/document/d/e/2PACX-1vSR5CZL4bOzIHaSgiqmz1laD8XvHsL7TH3XRt-DZgZ048OzehawXuxwAjYPX_WQi2iQse-u4SenifEG/pub )
+    - [C++ 서버 프로그래밍 실습](https://github.com/jacking75/edu_cpp_server_programming )
+    - [(YOUTUBE)채팅 서버 만들기](https://www.youtube.com/watch?v=eiwvQ8NV2h8)
+    - [단계 별로 IOCP 실습](https://github.com/jacking75/edu_cpp_IOCP )
+    - [오래된 IOCP API를 사용한 네트워크 라이브러리](https://github.com/jacking75/edu_cpp_server_programming/tree/main/opensource/edu_CQNetLib-master ) 를 최신 C++ 코드로 리팩토링 한다
+    - [C++로 HTTP 통신하기](https://github.com/jacking75/how_to_use_cpp_http_client )
+- C#
+    - [C# 네트워크 프로그래밍 학습](https://github.com/jacking75/edu_CSharpNetworkProgramming )  
+    - SuperSocket
+        - [(YOUTUBE) Echo Server 만들기](https://www.youtube.com/watch?v=ZgzMuHE43hU )
+        - [(YOUTUBE) Chat Server 만들기](https://www.youtube.com/watch?v=eiwvQ8NV2h8 )
+        - [(YOUTUBE) SuperSocketLite를 이용한 C# 게임 서버 프로그래밍](https://www.youtube.com/watch?v=1e9b-lpmR2Q&list=PLW_xyUw4fSdYYnD-Nnho_-ZERpKxCJchM )
+    - [NATS MQ를 이용한 서버간 통신](https://github.com/jacking75/edu_NATS_MQ )      
+
+
+<br>  
+      
   
 ## C++ 
   
@@ -43,24 +71,10 @@
     - [MS Docs: 동시성 런타임](https://docs.microsoft.com/ko-kr/cpp/parallel/concrt/concurrency-runtime?redirectedfrom=MSDN&view=vs-2019 ) 
     - [Parallel Programming with Microsoft Visual C++](https://docs.microsoft.com/en-us/previous-versions/msp-n-p/gg675934(v=pandp.10)?redirectedfrom=MSDN )   
   
-### 네트워크 프로그래밍 
-- [YOUTUBE 뇌를 자극하는 TCP/IP 소켓 프로그래밍](https://www.youtube.com/playlist?list=PLVsNizTWUw7GZy4UA9pntGRC9IIXIYiHm )
-- [YOUTUBE C++ Korea 제6회 세미나 - 채팅 서버 개발로 알아보는 C++의 기능들](https://youtu.be/JxejgUKTViQ )
-- [BeeJ's Guide to Network Programming - 인터넷 소켓 활용](https://blogofscience.com/Socket_Programming-KLDP.html )
-- [Linux 소켓 프로그래밍의 5가지 함정](https://docs.google.com/document/d/e/2PACX-1vRJNFor6dsmIjrEuyU-Y5J1YFrdL-7b6n3MLChvk_kieqh4WZKdNWot6iicaRfIA0QYLcXuGwMnvXJn/pub )
-- [무서운 SIGPIPE 소켓 프로그래밍의 함정](https://docs.google.com/document/d/e/2PACX-1vSR5CZL4bOzIHaSgiqmz1laD8XvHsL7TH3XRt-DZgZ048OzehawXuxwAjYPX_WQi2iQse-u4SenifEG/pub )
-  
 
 ### 라이브러리 
 - [Generic Callback Manager](https://docs.google.com/document/d/e/2PACX-1vSnIx0eNLRbTk0f8DGow3x4vzL1rvIWT6EBIf1B4jxtc7tZkpb_5lnywKqWdk2LOLfP02JdzMOZgEK8/pub )     
 
-
-### 실습
-- [C++ 서버 프로그래밍 실습](https://github.com/jacking75/edu_cpp_server_programming )
-- [채팅 서버 만들기](https://www.youtube.com/watch?v=eiwvQ8NV2h8)
-- [단계 별로 IOCP 실습](https://github.com/jacking75/edu_cpp_IOCP )
-- [오래된 IOCP API를 사용한 네트워크 라이브러리](https://github.com/jacking75/edu_cpp_server_programming/tree/main/opensource/edu_CQNetLib-master ) 를 최신 C++ 코드로 리팩토링 한다
-- [C++로 HTTP 통신하기](https://github.com/jacking75/how_to_use_cpp_http_client )
       
 
 <br>  
@@ -78,15 +92,7 @@
 ### API Server - ASP.NET Core
 - [ASP.Net Core Web API Server 학습](https://github.com/jacking75/edu_Learn_ASPNetCore_APIServer )
 - [DAO, DTO, VO 란? 간단한 개념 정리](https://melonicedlatte.com/2021/07/24/231500.html )
-  
-
-### 네트워크 프로그래밍
-- [C# 네트워크 프로그래밍 학습](https://github.com/jacking75/edu_CSharpNetworkProgramming )  
-- SuperSocket
-    - [Echo Server 만들기](https://www.youtube.com/watch?v=ZgzMuHE43hU )
-    - [Chat Server 만들기](https://www.youtube.com/watch?v=eiwvQ8NV2h8 )
-- [NATS MQ를 이용한 서버간 통신](https://github.com/jacking75/edu_NATS_MQ )    
-  
+   
     
 <br>  
     
