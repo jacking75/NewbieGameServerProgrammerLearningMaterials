@@ -91,6 +91,7 @@
 
 ### API Server - ASP.NET Core
 - [ASP.Net Core Web API Server 학습](https://github.com/jacking75/edu_Learn_ASPNetCore_APIServer )
+- [(ebook)ASP.NET Core Web API로 만드는 게임 서버](https://github.com/jacking75/programming-books-with-ai/tree/main/ASP_NET_WebAPI%EB%A1%9C_%EB%A7%8C%EB%93%9C%EB%8A%94_%EA%B2%8C%EC%9E%84%EC%84%9C%EB%B2%84 )
 - [DAO, DTO, VO 란? 간단한 개념 정리](https://melonicedlatte.com/2021/07/24/231500.html )
    
     
