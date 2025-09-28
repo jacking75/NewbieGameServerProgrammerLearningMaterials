@@ -46,6 +46,9 @@
         - [(YOUTUBE) Chat Server 만들기](https://www.youtube.com/watch?v=eiwvQ8NV2h8 )
         - [(YOUTUBE) SuperSocketLite를 이용한 C# 게임 서버 프로그래밍](https://www.youtube.com/watch?v=1e9b-lpmR2Q&list=PLW_xyUw4fSdYYnD-Nnho_-ZERpKxCJchM )
     - [NATS MQ를 이용한 서버간 통신](https://github.com/jacking75/edu_NATS_MQ )      
+	- [FastSocketLite 라이브러리 분석](https://github.com/jacking75/programming-books-with-ai/blob/main/CSharp_%ED%95%99%EC%8A%B5%EC%9D%84_%EC%9C%84%ED%95%9C_CSharp%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC_%EB%B6%84%EC%84%9D/FastSocketLite.md )
+	- [LiteNetwork 라이브러리 분석](https://github.com/jacking75/programming-books-with-ai/blob/main/CSharp_%ED%95%99%EC%8A%B5%EC%9D%84_%EC%9C%84%ED%95%9C_CSharp%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC_%EB%B6%84%EC%84%9D/LiteNetwork.md )
+	- [laster40Net 라이브러리 분석](https://github.com/jacking75/programming-books-with-ai/blob/main/CSharp_%ED%95%99%EC%8A%B5%EC%9D%84_%EC%9C%84%ED%95%9C_CSharp%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC_%EB%B6%84%EC%84%9D/laster40Net.md )
 
 
 <br>  
