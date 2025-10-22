@@ -38,6 +38,7 @@
     - [단계 별로 IOCP 실습](https://github.com/jacking75/edu_cpp_IOCP )
     - [오래된 IOCP API를 사용한 네트워크 라이브러리](https://github.com/jacking75/edu_cpp_server_programming/tree/main/opensource/edu_CQNetLib-master ) 를 최신 C++ 코드로 리팩토링 한다
     - [C++로 HTTP 통신하기](https://github.com/jacking75/how_to_use_cpp_http_client )
+	- [C++ Boost.Asio로 만드는 온라인 게임 서버](https://github.com/jacking75/programming-books-with-ai/tree/main/Cpp_BoostAsio%EB%A1%9C_%EB%A7%8C%EB%93%9C%EB%8A%94_%EC%98%A8%EB%9D%BC%EC%9D%B8_%EA%B2%8C%EC%9E%84_%EC%84%9C%EB%B2%84 )
 - C#
     - [게임 서버 개발를 위한 C# Socket 프로그래밍](https://github.com/jacking75/programming-books-with-ai/tree/main/%EA%B2%8C%EC%9E%84_%EC%84%9C%EB%B2%84_%EA%B0%9C%EB%B0%9C%EC%9D%84_%EC%9C%84%ED%95%9C_CSharp_Socket_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D )
     - [C# 네트워크 프로그래밍 학습](https://github.com/jacking75/edu_CSharpNetworkProgramming )  
