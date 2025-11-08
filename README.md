@@ -39,6 +39,7 @@
     - [오래된 IOCP API를 사용한 네트워크 라이브러리](https://github.com/jacking75/edu_cpp_server_programming/tree/main/opensource/edu_CQNetLib-master ) 를 최신 C++ 코드로 리팩토링 한다
     - [C++로 HTTP 통신하기](https://github.com/jacking75/how_to_use_cpp_http_client )
 	- [C++ Boost.Asio로 만드는 온라인 게임 서버](https://github.com/jacking75/programming-books-with-ai/tree/main/Cpp_BoostAsio%EB%A1%9C_%EB%A7%8C%EB%93%9C%EB%8A%94_%EC%98%A8%EB%9D%BC%EC%9D%B8_%EA%B2%8C%EC%9E%84_%EC%84%9C%EB%B2%84 )
+	- [게임 서버 개발자를 위한 최신 Win32 API 프로그래밍](https://github.com/jacking75/programming-books-with-ai/tree/main/%EA%B2%8C%EC%9E%84_%EC%84%9C%EB%B2%84_%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC_%EC%9C%84%ED%95%9C_%EC%B5%9C%EC%8B%A0_Win32_API%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D )
 - C#
     - [게임 서버 개발를 위한 C# Socket 프로그래밍](https://github.com/jacking75/programming-books-with-ai/tree/main/%EA%B2%8C%EC%9E%84_%EC%84%9C%EB%B2%84_%EA%B0%9C%EB%B0%9C%EC%9D%84_%EC%9C%84%ED%95%9C_CSharp_Socket_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D )
     - [C# 네트워크 프로그래밍 학습](https://github.com/jacking75/edu_CSharpNetworkProgramming )  
@@ -56,7 +57,10 @@
       
   
 ## C++ 
-  
+- [OpenSiv3D를 이용한 C++ 프로그래밍 학습](https://github.com/jacking75/programming-books-with-ai/tree/main/Cpp_OpenSiv3D%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_Cpp_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%ED%95%99%EC%8A%B5 )
+- [모던 C++로 시작하는 안전하고 쉬운 C++ 프로그래밍](https://github.com/jacking75/programming-books-with-ai/tree/main/Cpp_%EB%AA%A8%EB%8D%98_Cpp%EB%A1%9C_%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94_%EC%95%88%EC%A0%84%ED%95%98%EA%B3%A0_%EC%89%AC%EC%9A%B4_Cpp_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D )  
+- [Modern C++로 안전하고 우아한 프로그래밍](https://github.com/jacking75/programming-books-with-ai/tree/main/Cpp_Modern_Cpp%EB%A1%9C_%EC%95%88%EC%A0%84%ED%95%98%EA%B3%A0_%EC%9A%B0%EC%95%84%ED%95%9C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D )    
+    
 ### 학습
 - [가상함수와 클래스 상속 계층도](https://docs.google.com/presentation/d/1m3u7CwXAYwVQ6yCGT4OQ-32VCXgSHcICO-cdPb-c84o/edit?usp=sharing)
 - [RAII 해설](https://docs.google.com/presentation/d/1-Pft2eHxylKBNmVTIoExshbLXoTXW7DfuGA1170hwnM/edit?usp=sharing )
