@@ -22,6 +22,11 @@
     - [인지적 프롬프팅](https://docs.google.com/presentation/d/1kayepoiTVT838Tetk02nxeqVmmS9BDc9O7n-4OzJdL8/mobilepresent?slide=id.p )  
   
 
+## CS 지식  
+- [MMU에 대해서](MMU.md)  
+    
+  
+  
 ## 네트워크 프로그래밍 
   
 - [게임 서버 개발자가 알아야할 네트워크 이론](https://www.youtube.com/watch?v=G60c4YuSBhU)  
@@ -103,6 +108,7 @@
 - [ASP.Net Core Web API Server 학습](https://github.com/jacking75/edu_Learn_ASPNetCore_APIServer )
 - [(ebook)ASP.NET Core Web API로 만드는 게임 서버](https://github.com/jacking75/programming-books-with-ai/tree/main/ASP_NET_WebAPI%EB%A1%9C_%EB%A7%8C%EB%93%9C%EB%8A%94_%EA%B2%8C%EC%9E%84%EC%84%9C%EB%B2%84 )
 - [DAO, DTO, VO 란? 간단한 개념 정리](https://melonicedlatte.com/2021/07/24/231500.html )
+- [외부에서 비 공개된 내부의 웹서버에 접근하기 ](./How_to_Expose_a_Private_Web_Server_to_External_Access.md)
    
     
 <br>  
