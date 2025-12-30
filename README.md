@@ -1,5 +1,7 @@
 # 뉴비 게임 서버 프로그래머를 위한 학습 자료
 
+[네트워크 프로그래밍, 게임 서버 개발, DB 인포그래픽](./Infographics.md)  
+    
 - [A STUDY PATH FOR GAME PROGRAMMER](https://github.com/miloyip/game-programmer )
     - 각 분야별로 책을 중심으로 공부 방향을 알려줌
 - [Awesome Roadmaps Overview](https://www.trackawesomelist.com/liuchong/awesome-roadmaps/readme/ )  
