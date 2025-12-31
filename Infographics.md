@@ -59,6 +59,10 @@
 ![](./infographics_images/017.png)   
 
   
+## 온라인 게임 서버 아키텍처: 장르별 핵심 비교
+![](./infographics_images/026.png)   
+    
+  
 ## 사례: 배틀그라운드
 AWS 컨퍼런스 등의 외부 강연 등에서 얻은 자료를 기반으로 했음
 ![](./infographics_images/023.png)   
