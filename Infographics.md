@@ -58,6 +58,13 @@
 ## 한눈에 보는 MMORPG 서버 아키텍처와 협업 가이드
 ![](./infographics_images/017.png)   
 
+  
+## 사례: 배틀그라운드
+AWS 컨퍼런스 등의 외부 강연 등에서 얻은 자료를 기반으로 했음
+![](./infographics_images/023.png)   
+![](./infographics_images/024.png)   
+![](./infographics_images/025.png)   
+
 ---  
   
 ## 게임 개발자를 위한 데이터베이스 핵심 가이드
