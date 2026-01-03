@@ -29,7 +29,7 @@
 </br>    
    
 ## CS 지식  
-[인포그래픽](./Infographics/cs.md)    
+[인포그래픽](./infographics/cs.md)    
   
 - [MMU에 대해서](MMU.md)  
   
@@ -69,7 +69,7 @@
 </br>    
      
 ## 네트워크, 게임 서버 프로그래밍 
-[인포그래픽](./Infographics/network_server.md)    
+[인포그래픽](./infographics/network_server.md)    
     
 - [게임 서버 개발자가 알아야할 네트워크 이론](https://www.youtube.com/watch?v=G60c4YuSBhU)  
 
@@ -158,7 +158,7 @@
 <br>  
     
 ## DB 
-[인포그래픽](./Infographics/db.md)    
+[인포그래픽](./infographics/db.md)    
   
 - [(유튜브) 데이터베이스 입문](https://www.youtube.com/playlist?list=PLcXyemr8ZeoREWGhhZi5FZs6cvymjIBVe )    
 - [(인프런 무료 영상) SQL 시작도 못한 분들 드루와요](https://inf.run/NhkRi  )
