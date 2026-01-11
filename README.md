@@ -144,6 +144,8 @@
   
     
 ### C# 
+- [인포그래픽](./infographics/lang-cs.md )  
+  
 - [메모장으로 코딩하는 C#](https://rkttu.github.io/csharp-book/part1-basics/ ) 
 - [(인프런 무료 영상) C# 초보 강좌 예제로 배우는 C# - 11 강 ∙ 8시간 17분](https://inf.run/PVsq ) 
 - [(인프런 무료 영상) C# 처음부터 배우기 - 커리큘럼 총 11 개 ˙ 3시간 53분의 수업](https://inf.run/bfkW ) 
