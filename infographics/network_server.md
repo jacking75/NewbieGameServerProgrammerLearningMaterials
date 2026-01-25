@@ -57,6 +57,11 @@
 ## 온라인 게임 서버 아키텍처: 장르별 핵심 비교
 ![](./images/026.jpg)   
     
+	
+## 64비트 정렬 가능 ID
+![](./images/033.jpg)     
+[구현 저장소](https://github.com/sator-imaging/Half-Ulid )  
+  	
   
 ## 사례: 배틀그라운드
 AWS 컨퍼런스 등의 외부 강연 등에서 얻은 자료를 기반으로 했음
