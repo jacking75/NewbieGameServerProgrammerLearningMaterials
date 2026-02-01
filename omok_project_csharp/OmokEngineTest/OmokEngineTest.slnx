@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../OmokEngine/OmokEngine.csproj" />
+  <Project Path="OmokEngineTest.csproj" />
+</Solution>
