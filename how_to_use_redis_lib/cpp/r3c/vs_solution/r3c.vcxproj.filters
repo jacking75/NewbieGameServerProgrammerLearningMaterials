@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\r3c.cpp" />
+    <ClCompile Include="..\sha1.cpp" />
+    <ClCompile Include="..\utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\r3c.h" />
+    <ClInclude Include="..\sha1.h" />
+    <ClInclude Include="..\utils.h" />
+  </ItemGroup>
+</Project>

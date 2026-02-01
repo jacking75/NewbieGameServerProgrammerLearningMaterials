@@ -190,12 +190,12 @@
   
 ### Redis 
 - [글 모음](https://gist.github.com/jacking75/5d9927851b22a539774301017e0cefd7)
+- C++, C#, Golang Redis 라이브러리 사용 방법 정리: `how_to_use_redis_lib` 디렉토리
 - [레디스 게이트](http://www.redisgate.com/redis/command/latency.php ) 기능 설명
 - [(영상) Redis 야무지게 사용하기](https://forward.nhn.com/2021/sessions/16 ) 
 - [Redis 글 모음](https://gist.github.com/jacking75/5d9927851b22a539774301017e0cefd7 ) 
 - [(유튜브) C++를 이용한 Redis 프로그래밍](https://www.youtube.com/watch?v=pGo1TnPH43Y&t=16s )  
 - [(유튜브) Redis C# 프로그래밍](https://www.youtube.com/watch?v=09ufiNEWynk )
-- [redis 라이브러리 사용 방법 정리](https://github.com/jacking75/how_to_use_redis_lib )
 - [Redis를 활용한 다양한 시스템 설계](https://devs0n.tistory.com/92 )
 - [Redis의 기본 데이터 유형 및 명령](https://docs.google.com/document/d/10mHFq-kTpGBk1-id5Z-zoseiLnTKr_T8N3byBZP5mEg/edit?usp=sharing )
 - [Redis로 방문자수 구현하기](https://docs.google.com/document/d/e/2PACX-1vQFFSlvGJuDIjeEJM7UZdKRAC0Ps-CiBGFJQfZs_dLwko5cuIYMcbYWUZYeyb-K7M3pdMs9WAv7WD8B/pub )
