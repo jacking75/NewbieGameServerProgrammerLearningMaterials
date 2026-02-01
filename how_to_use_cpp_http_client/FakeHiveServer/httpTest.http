@@ -1,0 +1,18 @@
+﻿###
+POST http://localhost:11502/AuthCheck
+Content-Type: application/json
+
+{
+  "AuthID":"test03",
+  "AuthToken":"5GZF7OFY05P4TT"
+}
+
+###
+POST http://localhost:11500/CreateAccount
+Content-Type: application/json
+
+{
+  "ID":"jacking751",
+  "PW":"123qwe",
+  "NickName": "aaa"
+}
