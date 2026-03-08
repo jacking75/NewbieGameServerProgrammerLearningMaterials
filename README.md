@@ -72,7 +72,8 @@
 ## 네트워크, 게임 서버 프로그래밍 
 [인포그래픽](./infographics/network_server.md)    
     
-- [게임 서버 개발자가 알아야할 네트워크 이론](https://www.youtube.com/watch?v=G60c4YuSBhU)  
+- [게임 서버 개발자가 알아야할 네트워크 이론](https://www.youtube.com/watch?v=G60c4YuSBhU) 
+- [게임 서버 개발, 네트워크부터 이해하기](/docs/게임_서버_개발_네트워크부터_이해하기) 
 
 ### C++
 - [(YOUTUBE) 게임 서버 개발자가 알아야할 TCP/IP Windows 소켓 프로그래밍](https://www.youtube.com/watch?v=MYZZrLN1dJo&list=PLW_xyUw4fSdZ9E4SaOOydJOiuFGchy5HI )
