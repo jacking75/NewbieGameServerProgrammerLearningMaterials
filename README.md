@@ -25,6 +25,12 @@
 - ChatGPT
     - [ChatGPT에서 기억해두면 유용한 Markdown 표기법 5가지](https://docs.google.com/document/d/e/2PACX-1vR3H0dks98hJdcYPxAW2kBV3C1jFpeDBt7rq5t7JThnszD-ONmJDrDX60KDKsrearOuTFpOVhMeG3R6/pub )
     - [인지적 프롬프팅](https://docs.google.com/presentation/d/1kayepoiTVT838Tetk02nxeqVmmS9BDc9O7n-4OzJdL8/mobilepresent?slide=id.p )  
+
+- [Claude Code 학습 자료실](https://jacking75.github.io/edu_claude_code/)  
+
+- [Codex CLI 학습 문서](https://github.com/jacking75/edu_codex-cli) 
+  
+- [바이브 코딩을 위한 Git Work Tree 배우기](./git_work_tree.md)
   
 ---  
     
