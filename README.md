@@ -277,4 +277,22 @@
 - 그림으로 쉽게 이해하는 웹/HTTP/네트워크
 - 동료들 뒷목 잡게 만드는 나쁜 프로그래밍 습관
 - 유선배 SQL개발자(SQLD) 과외노트  
+  
+---  
+  
+<br>  
+  
+## 유튜브 - 게임 서버 개발 관련 영상
+[jacking75 유튜브 채널](https://www.youtube.com/@jacking75/videos ) 에 있는 영상 중 게임 서버 개발과 관련된 재생목록과 영상들이다.
+
+- [게임서버 개발](https://www.youtube.com/playlist?list=PLW_xyUw4fSdaUWqmNevYiwUGegAYTwTko )
+- [C++ 게임서버 개발](https://www.youtube.com/playlist?list=PLW_xyUw4fSdYJuxJaMx3k32xTN3Ou8aDy )
+- [C# 게임서버 개발](https://www.youtube.com/playlist?list=PLW_xyUw4fSdZOtyDX5Wf5sKbFMYSH-K3o )
+- [Golang 게임서버 개발](https://www.youtube.com/playlist?list=PLW_xyUw4fSdYNPOH2W76uBJijHxUiX-OY )
+- [API Game Server 개발](https://www.youtube.com/playlist?list=PLW_xyUw4fSdaCvVAP0EMT1PYN7RZqPTvi )
+- [IOCP](https://www.youtube.com/playlist?list=PLW_xyUw4fSdbYjgwC-JCCFWznhayrZv77 )
+- [게임 서버 개발을 위한 C# Socket 프로그래밍](https://www.youtube.com/playlist?list=PLW_xyUw4fSdYZjKishKhgcuVh8nSL5IlF )
+- [C++ Boost.Asio로 만드는 온라인 게임 서버](https://www.youtube.com/playlist?list=PLW_xyUw4fSdYAPV47O-ArzQXiZnsY1pZ8 )
+- [ASP.NET Core Web API로 만드는 게임 서버](https://www.youtube.com/playlist?list=PLW_xyUw4fSdbf2MgHrooTNATYEmYZ4dxw )
+- [게임 회사에 신입 게임 서버 프로그래머로 입사하기 위해 공부할 것](https://www.youtube.com/watch?v=hHGwy_dsDf8 )
 
