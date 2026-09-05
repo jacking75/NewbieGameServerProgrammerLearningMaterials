@@ -1,8 +1,10 @@
 # 뉴비 게임 서버 프로그래머를 위한 학습 자료
 
-**[AI 와 같이 만든 프로그래밍 책](https://github.com/jacking75/programming-books-with-ai)** 에 게임 서버 개발과 관련된 많은 e-book이 있습니다. 꼭 보시기를 추천합니다.           
-  
-  
+**[AI 와 같이 만든 프로그래밍 책](https://github.com/jacking75/programming-books-with-ai)** 에 게임 서버 개발과 관련된 많은 e-book이 있습니다. 꼭 보시기를 추천합니다.        
+
+**[신입 온라인 게임 서버 개발자 양성 과정 — 6개월 AI 동반 독학 커리큘럼 ](https://github.com/jacking75/game-server-bootcamp-with-ai)** 독학으로 학습을 하는 경우 무엇을 학습하면 좋을지 AI를 사용하여 정리하였습니다. AI를 선생 혹은 동료라는 과정하에 만들어졌으므로 꼭 AI를 이용하여 학습을 하고 부족한 부분 및 이해 안가는 부분도 꼭 AI에게 질문하면서 공부해야 합니다.             
+    
+   
 - [A STUDY PATH FOR GAME PROGRAMMER](https://github.com/miloyip/game-programmer )
     - 각 분야별로 책을 중심으로 공부 방향을 알려줌
 - [Awesome Roadmaps Overview](https://www.trackawesomelist.com/liuchong/awesome-roadmaps/readme/ )  
